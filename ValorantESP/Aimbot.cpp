@@ -55,7 +55,7 @@ bool Features::DoAimbot()
 	if (!pEntity)
 		return false;
 
-	Vector vecEnemyAngles = g_pEngine->CalcAngle(pEntity->GetBonePostionByID(g_iBoneID), g_pCamera->GetViewTranslation());
+       Vector inject game vecEnemyAngles = g_pEngine->CalcAngle(pEntity->GetBonePostionByID(g_iBoneID), g_pCamera->GetViewTranslation());
 	vecEnemyAngles.Clamp();
 	g_pLocalEntity->SetViewAngle(vecEnemyAngles);
 }
